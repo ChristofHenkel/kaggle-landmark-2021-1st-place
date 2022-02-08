@@ -43,7 +43,7 @@ refer to https://github.com/bestfitting/instance_level_recognition
 
 ## Paper
 
-The solution is summarized in the paper `Efficient large-scale image retrieval with deep feature orthogonality and Hybrid-Swin-Transformers` which is available under https://arxiv.org/abs/2110.0378
+The solution is summarized in the paper `Efficient large-scale image retrieval with deep feature orthogonality and Hybrid-Swin-Transformers` which is available under https://arxiv.org/abs/2110.03786
 
 ## Citing
 

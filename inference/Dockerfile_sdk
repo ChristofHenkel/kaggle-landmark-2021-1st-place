@@ -1,0 +1,23 @@
+FROM nvcr.io/nvidia/tritonserver:23.04-py3-sdk
+#FROM nvcr.io/nvidia/tritonserver:22.09-py3
+
+RUN apt-get update
+RUN python3 -m pip install --upgrade pip
+RUN pip install torch
+#RUN pip install pytorch==1.9
+RUN pip install torchvision
+RUN pip install jupyter
+RUN pip install matplotlib
+RUN pip install pandas
+
+RUN apt update
+RUN apt remove --purge --auto-remove cmake
+RUN apt purge --auto-remove cmake
+RUN apt update
+
+RUN apt install -y software-properties-common lsb-release
+RUN apt clean all
+
+
+
+WORKDIR /workspace

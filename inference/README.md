@@ -14,7 +14,7 @@ ONNX can be straight served in Triton using the onnx-runtime backend. Here we ch
 ** a model folder contains for a certain backend, e.g. tensorflow 
 ** a different model folder can serve a model for another backend
 
-
+```
 model_repo/
 ├── both_together
 │   ├── 1
@@ -34,7 +34,7 @@ model_repo/
     ├── 1
     │   └── model.plan
     └── config.pbtxt
-
+```
 
 
 # Model Definitions for Triton

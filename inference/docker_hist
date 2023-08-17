@@ -1,0 +1,25 @@
+    1  tritonserver --model-repository inf_time_augm --model-control-mode EXPLICIT --load-model daliext
+    2  ls inf_time_augm
+    3  tritonserver --model-repository inf_time_augm --model-control-mode EXPLICIT --load-model daliexp
+    4  tritonserver --model-repository inf_time_augm 
+    5  tritonserver --model-repository inf_time_augm --model-control-mode EXPLICIT --load-model daliexp
+    6  histo
+    7  history >> docker_hist
+    1  ls
+    2  cat docker_hist 
+    3  tritonserver --model-repository inf_time_augm --model-control-mode EXPLICIT --load-model daliexp
+    4  cd inf_time_augm
+    5  ls
+    6  cd daliexp/1/
+    7  ls
+    8  python3 dali.py 
+    9  pip install dali
+   10  pip install --extra-index-url https://developer.download.nvidia.com/compute/redist --upgrade nvidia-dali-cuda120
+   11  python3 dali.py 
+   12  cp ../../../11607.jpg .
+   13  python3 dali.py 
+   14  nvidia-smi 
+   15  pip install --extra-index-url https://developer.download.nvidia.com/compute/redist --upgrade nvidia-dali-cuda110
+   16  python3 dali.py 
+   17  cd ..
+   18  history >> docker_hist 

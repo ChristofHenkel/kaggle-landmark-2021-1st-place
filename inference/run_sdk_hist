@@ -1,0 +1,11 @@
+FROM nvcr.io/nvidia/tritonserver:22.10-py3-sdk
+
+RUN apt update
+RUN apt upgrade
+
+RUN python3 -m pip install --upgrade pip
+RUN pip3 install jupyter
+
+RUN pip3 install jupyter
+RUN pip3 install torchvision
+
